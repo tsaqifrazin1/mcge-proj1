@@ -1,5 +1,2 @@
 runtime: nodejs10
 service: static-web
-handlers:
-- url: /style
-  static_dir: stylesheets
