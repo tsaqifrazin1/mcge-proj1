@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Century Gothic';
+    box-sizing: border-box;
+}
+body {
+    margin-left: 2px;
+    background-color: rgb(66, 67, 97);
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url('WEB2.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    margin-left: -2px;
+}
+header ul {
+     list-style-type: none;
+     float: right;
+     margin-top: 30px;
+     margin-right: 40px;
+}
+header ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    transition: 0.6s;
+}
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+.sub-menu-1{
+    display: none;
+}
+.sub-menu-1 ul li{
+    color: black;
+}
+header ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: rgb(66, 67, 97);  
+    margin-top: 15px; 
+    margin-left: -15px;  
+} 
+header ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+header ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+header ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+header ul li:hover .sub-menu-1 ul li a:hover{
+    color: gray;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-right: 200px;
+}
+.titlebox {
+    flex-grow : 1
+
+}
+.titlebox img {
+    background-position: top right;
+}
+
+.button{
+    position: absolute;
+    color: white;
+    margin: 40px 0;
+}
+.btn {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.title img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-color: blue;
+    float: right;
+    padding: 5px;
+}
+article{
+    overflow: auto;
+}
+#about,
+#speakers,
+#contact-us {
+    background-color: rgb(66, 67, 97);
+    color: white;
+    padding-bottom: 20px;
+}
+
+#about h2 span{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-right: 5px;
+}
+.benefit {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 200px;
+}
+.satu{
+    list-style-position: inside;
+}
+.dua{
+    list-style-position: inside;
+}
+#speakers h2 span {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-right: 5px;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;  
+    margin-bottom: 50px; 
+} 
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box{
+    flex-grow: 1;
+    border-radius: 10px;
+    flex-basis: 33.3333%;
+    margin: 20px;
+}
+.box img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#contact-us{
+    overflow: auto;
+}
+#contact-us h2 span{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-right: 5px;
+}
+#contact-us p {
+    line-height: 1.75;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.figure img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+footer{
+    background-color: rgb(25, 24, 73);
+    overflow: auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-left: -2px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+footer p {
+    margin: 5px;
+}
+.contact-box .text p{
+    text-align: center;
+    color: #fff;
+}
+.footer-logo img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin: 3px;
+}
+.contact-us-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+/* .contact-box{
+    flex-grow: 1;
+} */
+img.figure2 {
+    width: 500px;
+}
+.contact-box{
+    padding-left: 30px;
+    padding-top: 80px;
+    text-align:center;
+}
+.contact figure{
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 1045px) { 
+    .title {
+        padding-top: 60px;
+    }
+    .button{
+        margin: 30px 0 ;
+    }
+    .button h4{
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 630px) { 
+    .title {
+        padding-top: 35px;
+    }
+    .button{
+        margin: 15px 0 ;
+    }
+    .button h4{
+        margin-top: 15px;
+    }
+}
